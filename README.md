@@ -1,52 +1,16 @@
-# Personal Portfolio Website
+# React + Vite
 
-Welcome to my personal portfolio repository! This is a clean,
-responsive, and modern portfolio website built from scratch using
-pure HTML5 and CSS3. It showcases my background, skills, featured
-projects, and social media links.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## About Me
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Hi, I'm **Seada Mohamed**!
+## React Compiler
 
-- 🎓 **3rd Year Computer Science Student**
-- 💡 **Self-Taught Web Developer**
-- 🚀 Passionate about web development, continually upgrading my coding
-  skills, and building responsive digital solutions.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## Features
-
-- 📱 **Fully Responsive Design:** Adapts to mobile, tablet, and desktop.
-- 🎨 **Modern UI/UX:** Clean navigation, subtle box-shadows, and typography.
-- ⚡ **Lightweight & Fast:** Built with pure HTML5 and CSS3 without frameworks.
-- 🎯 **Interactive Sections:**
-  - **Hero:** Quick intro with call-to-action button.
-  - **About:** Background and personal journey.
-  - **Skills:** Visual breakdown with Font Awesome icons.
-  - **Projects:** Showcasing web development work.
-  - **Contact:** Direct links to social profiles.
-
----
-
-## Tech Stack & Tools
-
-- **HTML5** - Page structure & semantic elements.
-- **CSS3** - Custom styling, Flexbox, & Grid layouts.
-- **Font Awesome 6** - Vector icons.
-
----
-
-## Project Structure
-
-```text
-├── assets/             # Images and local media
-│   ├── mypic.jpg
-│   ├── css.jpg
-│   └── logo1.jpg
-├── index.html          # Main HTML document
-├── index.css           # Custom CSS styling
-└── README.md           # Project documentation
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
