@@ -5,6 +5,14 @@ import './Hero.css'
 function Hero() {
   return (
     <section id="home" className="hero">
+      <svg className="hero__defs" aria-hidden="true" focusable="false">
+        <defs>
+          <clipPath id="hero-blob" clipPathUnits="objectBoundingBox">
+            <path d="M0.52,0 L1,0 L1,1 L0.3,1 C0.12,0.933 0.06,0.783 0.22,0.683 C0.38,0.583 0.24,0.467 0.3,0.367 C0.36,0.267 0.54,0.25 0.52,0 Z" />
+          </clipPath>
+        </defs>
+      </svg>
+
       <div className="hero__inner">
         <div className="hero__text">
           <p className="hero__greeting">Hello, I'm</p>
@@ -32,10 +40,11 @@ function Hero() {
             </a>
           </div>
         </div>
+      </div>
 
-        <div className="hero__image">
-          <img src={profile.photo} alt={profile.name} />
-        </div>
+      <div className="hero__visual">
+        <div className="hero__shape" />
+        <img src={profile.photo} alt={profile.name} />
       </div>
     </section>
   )
