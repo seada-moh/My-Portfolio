@@ -1,14 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { navLinks } from '../../data/navLinks'
 import { profile } from '../../data/profile'
 import './Navbar.css'
 
+const SCROLL_THRESHOLD = 20
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const firstName = profile.name.split(' ')[0]
 
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > SCROLL_THRESHOLD)
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="navbar">
+    <header className={`navbar ${isScrolled ? 'is-scrolled' : ''}`}>
       <nav className="navbar__inner">
         <a href="#home" className="navbar__logo">
           {firstName}

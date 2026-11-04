@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px 24px 60px;
+  padding: 130px 32px 70px;
   overflow: hidden;
   background: var(--bg);
 }
@@ -23,24 +23,26 @@
 }
 
 .hero__text {
-  max-width: 520px;
+  max-width: 640px;
 }
 
 .hero__greeting {
   color: var(--muted);
-  font-size: 1.1rem;
-  margin-bottom: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .hero__name {
-  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-weight: 700;
 }
 
 .hero__role {
-  font-size: clamp(1.2rem, 3vw, 1.7rem);
-  font-weight: 500;
-  margin: 8px 0 20px;
-  min-height: 2.2rem;
+  font-size: clamp(1.6rem, 3.6vw, 2.5rem);
+  font-weight: 600;
+  margin: 14px 0 26px;
+  min-height: 3.2rem;
 }
 
 .typewriter {
@@ -48,7 +50,7 @@
 }
 
 .typewriter__cursor {
-  margin-left: 2px;
+  margin-left: 3px;
   font-weight: 400;
   animation: blink 0.8s steps(1) infinite;
 }
@@ -66,19 +68,22 @@
 
 .hero__bio {
   color: var(--muted);
-  margin-bottom: 24px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
 }
 
 .hero__socials {
   display: flex;
-  gap: 20px;
-  margin-bottom: 28px;
+  gap: 28px;
+  margin-bottom: 36px;
 }
 
 .hero__socials a {
-  font-weight: 500;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 2px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 3px;
   transition: color 0.2s;
 }
 
@@ -88,20 +93,21 @@
 
 .hero__buttons {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 16px 38px;
   border-radius: 999px;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   transition: transform 0.2s, background 0.2s;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .btn--primary {
@@ -123,7 +129,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: 48%;
+  width: 52%;
   z-index: 1;
 }
 
@@ -149,11 +155,11 @@
 
 @media (max-width: 1000px) {
   .hero__visual {
-    width: 42%;
+    width: 50%;
   }
 
   .hero__text {
-    max-width: 420px;
+    max-width: 480px;
   }
 }
 
@@ -162,21 +168,21 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    padding-top: 90px;
+    padding: 90px 20px 50px;
   }
 
   .hero__visual {
     position: relative;
     order: -1;
-    width: calc(100% + 48px);
+    width: calc(100% + 40px);
     height: 380px;
-    margin: 0 -24px 32px;
+    margin: 0 -20px 32px;
   }
 
   .hero__visual img {
     right: 50%;
     transform: translateX(50%);
-    height: 92%;
+    height: 94%;
     max-width: 80%;
   }
 
