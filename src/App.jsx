@@ -1,5 +1,7 @@
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
+import About from './components/About/About'
+
 
 function App() {
   return (
@@ -7,7 +9,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <section id="about" style={{ minHeight: '100vh', paddingTop: 120 }} />
+        <About />
         <section id="projects" style={{ minHeight: '100vh', paddingTop: 120 }} />
         <section id="contact" style={{ minHeight: '100vh', paddingTop: 120 }} />
       </main>
