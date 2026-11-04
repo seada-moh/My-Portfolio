@@ -1,6 +1,14 @@
+import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import Typewriter from '../Typewriter/Typewriter'
 import { profile } from '../../data/profile'
 import './Hero.css'
+
+const socialLinks = [
+  { label: 'GitHub', href: profile.socials.github, Icon: FaGithub },
+  { label: 'LinkedIn', href: profile.socials.linkedin, Icon: FaLinkedinIn },
+  { label: 'Instagram', href: profile.socials.instagram, Icon: FaInstagram },
+  { label: 'Facebook', href: profile.socials.facebook, Icon: FaFacebookF },
+]
 
 function Hero() {
   return (
@@ -23,12 +31,18 @@ function Hero() {
           <p className="hero__bio">{profile.bio}</p>
 
           <div className="hero__socials">
-            <a href={profile.github} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
+            {socialLinks.map(({ label, href, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                title={label}
+              >
+                <Icon />
+              </a>
+            ))}
           </div>
 
           <div className="hero__buttons">
