@@ -157,13 +157,14 @@
 
 .hero__visual img {
   position: absolute;
-  right: 8%;
+  right: 0%;
   bottom: 0;
   height: 94%;
   width: auto;
   max-width: 90%;
   object-fit: contain;
   object-position: bottom;
+  transform: scaleX(-1);
   filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.3));
 }
 

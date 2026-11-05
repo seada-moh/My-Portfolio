@@ -56,7 +56,7 @@ function Contact() {
         </div>
 
         <a href={`mailto:${contact.email}`} className="btn btn--primary">
-          Say Hello
+          Contact Me
         </a>
       </div>
     </section>

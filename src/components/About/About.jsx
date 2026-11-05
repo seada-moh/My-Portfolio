@@ -10,7 +10,7 @@ function About() {
       <div className="about__inner">
         <div className="about__media">
           <div className="about__frame" />
-          <img src={profile.photo} alt={profile.name} />
+          <img src={profile.aboutPhoto} alt={profile.name} />
         </div>
 
         <div className="about__content">
