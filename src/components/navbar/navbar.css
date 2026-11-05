@@ -31,6 +31,12 @@
 .navbar__logo {
   font-size: 1.9rem;
   font-weight: 700;
+  color: var(--bg);
+  transition: color 0.3s;
+}
+
+.navbar.is-scrolled .navbar__logo {
+  color: var(--text);
 }
 
 .navbar__logo span {

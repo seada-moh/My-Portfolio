@@ -1,11 +1,16 @@
 .hero {
+  --hero-bg: #f7f9fa;
+  --hero-ink: #0b1220;
+  --hero-muted: #4a5568;
+  --hero-accent-text: #0097a7;
+
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 130px 32px 70px;
   overflow: hidden;
-  background: var(--bg);
+  background: var(--hero-bg);
 }
 
 .hero__defs {
@@ -27,13 +32,14 @@
 }
 
 .hero__greeting {
-  color: var(--muted);
+  color: var(--hero-muted);
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .hero__name {
+  color: var(--hero-ink);
   font-size: clamp(3rem, 7vw, 5.2rem);
   font-weight: 700;
 }
@@ -46,7 +52,7 @@
 }
 
 .typewriter {
-  color: var(--accent);
+  color: var(--hero-accent-text);
 }
 
 .typewriter__cursor {
@@ -67,11 +73,12 @@
 }
 
 .hero__bio {
-  color: var(--muted);
+  color: var(--hero-muted);
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 30px;
 }
+
 .hero__socials {
   display: flex;
   gap: 16px;
@@ -85,14 +92,15 @@
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: var(--accent);
-  border: 2px solid var(--accent);
+  color: var(--hero-accent-text);
+  border: 2px solid var(--hero-accent-text);
   border-radius: 50%;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
 }
 
 .hero__socials a:hover {
   background: var(--accent);
+  border-color: var(--accent);
   color: #06202a;
   transform: translateY(-3px);
 }
@@ -109,7 +117,7 @@
   border-radius: 999px;
   font-size: 1.1rem;
   font-weight: 600;
-  transition: transform 0.2s, background 0.2s;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
 }
 
 .btn:hover {
@@ -122,12 +130,13 @@
 }
 
 .btn--outline {
-  border: 2px solid var(--accent);
-  color: var(--accent);
+  border: 2px solid var(--hero-accent-text);
+  color: var(--hero-accent-text);
 }
 
 .btn--outline:hover {
-  background: rgba(0, 229, 255, 0.1);
+  background: var(--hero-accent-text);
+  color: #ffffff;
 }
 
 .hero__visual {
@@ -148,15 +157,14 @@
 
 .hero__visual img {
   position: absolute;
-  right: 10%;
+  right: 8%;
   bottom: 0;
-  height: 86%;
+  height: 94%;
   width: auto;
-  max-width: 86%;
+  max-width: 90%;
   object-fit: contain;
   object-position: bottom;
-  filter: brightness(1.15) contrast(1.05) saturate(1.05)
-    drop-shadow(0 16px 24px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.3));
 }
 
 @media (max-width: 1000px) {
