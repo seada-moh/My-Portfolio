@@ -1,5 +1,5 @@
 export const about = {
-  title: 'About Me',
+  title: 'Get To Know Me',
   paragraphs: [
     "I'm a 4th-year Computer Science student at Debre Tabor University with a strong interest in building complete web applications from the interface to the database.",
     "I learn by building. I'm focused on the MERN stack and I keep practicing through projects, because that is where concepts finally make sense.",
