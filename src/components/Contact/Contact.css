@@ -1,0 +1,119 @@
+.contact {
+  padding: 120px 32px;
+  background: var(--bg);
+}
+
+.contact__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.contact__label {
+  padding: 10px 32px;
+  border-radius: 999px;
+  background: rgba(0, 229, 255, 0.12);
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 0 28px rgba(0, 229, 255, 0.35);
+}
+
+.contact__title {
+  margin-top: 24px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.contact__bar {
+  display: flex;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.contact__bar::before,
+.contact__bar::after {
+  content: '';
+  height: 4px;
+  border-radius: 4px;
+  background: var(--accent);
+}
+
+.contact__bar::before {
+  width: 70px;
+}
+
+.contact__bar::after {
+  width: 14px;
+}
+
+.contact__intro {
+  max-width: 560px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.contact__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-bottom: 56px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 36px 24px;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.contact-card__icon {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background: rgba(0, 229, 255, 0.12);
+  color: var(--accent);
+  font-size: 1.8rem;
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  word-break: break-word;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    padding: 80px 20px;
+  }
+}
